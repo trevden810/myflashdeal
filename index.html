@@ -3,6 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='impact-site-verification' content='5797f25-86ed-4977-b012-042dbd023828' />
+    <!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XYZ123456"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XYZ123456'); // Replace with your actual Measurement ID when received
+    </script>
     <title>FlashDeal - Automatic Coupon & Deal Finder | myflashdeal.com</title>
     <style>
         :root {
@@ -373,7 +382,7 @@
             <div class="install-steps">
                 <p>While FlashDeal is being reviewed by the Chrome Web Store, you can install our beta version using developer mode:</p>
                 <ol>
-                    <li>Download the extension ZIP file: <a href="flashdeal-extension.zip" class="cta-button">Download FlashDeal</a></li>
+                    <li>Download the extension ZIP file: <a href="flashdeal-extension.zip" class="cta-button" onclick="gtag('event', 'extension_download', {'event_category': 'engagement', 'event_label': 'dev_mode'}); return true;">Download FlashDeal</a></li>
                     <li>Unzip the file to a folder on your computer</li>
                     <li>Open Chrome and go to <code>chrome://extensions/</code></li>
                     <li>Enable "Developer mode" using the toggle in the top-right corner</li>
